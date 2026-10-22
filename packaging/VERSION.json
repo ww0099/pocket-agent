@@ -1,0 +1,11 @@
+{
+  "product": "PocketAgent",
+  "version": "0.1.0",
+  "builtAt": "2026-10-22",
+  "runtime": "node-v24.18.0-win-x64",
+  "features": "M5",
+  "stage": "M6-verified",
+  "verifiedAt": "2026-10-22",
+  "tuiVerified": true,
+  "release": "v1-candidate"
+}
