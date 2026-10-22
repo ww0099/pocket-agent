@@ -1,0 +1,51 @@
+{
+  "name": "pocket-agent",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Portable, plug-and-play AI coding agent for Windows USB drives",
+  "bin": {
+    "pocket-agent": "dist/cli.js"
+  },
+  "scripts": {
+    "dev": "tsx src/cli/main.ts",
+    "build": "node scripts/build.mjs",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "lint": "biome check src tests scripts",
+    "format": "biome format --write src tests scripts",
+    "smoke": "node dist/cli.js --version",
+    "smoke:e2e": "node scripts/e2e-smoke.mjs",
+    "smoke:plain": "node scripts/e2e-plain.mjs",
+    "smoke:mcp": "node scripts/e2e-mcp.mjs"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.1",
+    "cli-highlight": "^2.1.11",
+    "ink": "^8.0.0",
+    "ink-text-input": "^6.0.0",
+    "jsonc-parser": "^3.3.1",
+    "marked": "^18.1.1",
+    "picomatch": "^4.0.7",
+    "react": "^19.3.1",
+    "string-width": "^8.3.0",
+    "tinyglobby": "^0.2.17",
+    "zod": "^3.24.0",
+    "zod-to-json-schema": "^3.25.2"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@types/node": "^24.0.0",
+    "@types/picomatch": "^4.0.3",
+    "@types/react": "^19.3.0",
+    "esbuild": "^0.25.0",
+    "ink-testing-library": "^4.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0",
+    "vitest": "^3.0.0"
+  }
+}

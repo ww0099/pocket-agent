@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.npm-cache/
+coverage/
+.tmp/
+*.log
+.env
+.env.*
+config/
+
+data/
+.vitest/
